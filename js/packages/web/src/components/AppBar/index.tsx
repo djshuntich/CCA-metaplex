@@ -54,7 +54,12 @@ export const MetaplexMenu = () => {
     return (
       <>
         <Modal
-          title={<img src={'/CCLogo.png'} />}
+          title={
+            <img
+              src={'/CCLogo.png'}
+              style={{ width: '150px', paddingBottom: '10px' }}
+            />
+          }
           visible={isModalVisible}
           footer={null}
           className={'modal-box'}
@@ -113,7 +118,10 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img src={'/CCLogo.png'} />
+      <img
+        src={'/CCLogo.png'}
+        style={{ width: '150px', paddingBottom: '10px' }}
+      />
     </Link>
   );
 };
