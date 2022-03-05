@@ -5,7 +5,7 @@ import { useWallet } from '@solana/wallet-adapter-react';
 import { Notifications } from '../Notifications';
 import useWindowDimensions from '../../utils/layout';
 import { MenuOutlined } from '@ant-design/icons';
-import { HowToBuyModal } from '../HowToBuyModal';
+
 import {
   Cog,
   CurrentUserBadge,
@@ -138,9 +138,9 @@ export const AppBar = () => {
           <MetaplexMenu />
         </div>
         <div className="app-right">
-          {!connected && (
+          {/* {!connected && (
             <HowToBuyModal buttonClassName="modal-button-default" />
-          )}
+          )} */}
           {!connected && (
             <ConnectButton style={{ height: 48 }} allowWalletChange />
           )}
